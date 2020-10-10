@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 :root{
     --radius: 12px;
     --clr-gold: #c59d5f;
     --clr-white: #ffffff;
+    --clr-gray-2: #4F4F4F;
+    --clr-gray-3: #828282;
+    --clr-black-1: #000000;
+    --clr-black-3: #333333;
+
     --transition: all 0.3s linear;
 }
 /*
@@ -37,13 +43,178 @@ img {
     display: block;
 }
 section{
-    max-width: 1200px;
-}
-/* Projects */
-.projects{
     width: 90%;
+    max-width: 1200px;
     margin: 2rem auto;
 }
+.bg-color{
+    background-color: var(--clr-white);
+}
+
+/* Profile */
+.about-me{
+    padding: 1rem;
+}
+.profile__pic {
+    object-fit: cover;
+    border-radius: var(--radius);
+    height: 343px;
+    margin-bottom: 1rem;
+}
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.name__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.name__content > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--clr-gray-2);
+}
+.infos > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: .5rem 0rem;
+}
+.job {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--clr-gray-3);
+}
+.infos__contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+.infos__contact > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+.profile__email, .profile__phone {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--clr-gray-2);
+    display: flex;
+}
+.material-icons {
+    margin-right: .7rem;
+}
+.profile__content > *{
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 320px){
+    .profile__email, .profile__phone{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .about-me{
+        display: flex;
+        justify-content: space-around;
+    }
+    .profile__pic{
+        flex: 1 1 20%;
+        max-width: 20%;
+        height: 200px;
+        margin-right: 1rem;
+    }
+    .profile__content{
+        flex: 1 1 75%;
+    }
+    .infos > * {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: .5rem 0rem;
+    }
+    .profile__email, .profile__phone {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--clr-gray-2);
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .about-me{
+        display: flex;
+        justify-content: space-around;
+    }
+    .profile__pic{
+        flex: 1 1 20%;
+        max-width: 20%;
+        height: 200px;
+        margin-right: 1rem;
+    }
+    .profile__content{
+        flex: 1 1 75%;
+    }
+    .infos > * {
+        flex: 1 1 50%;
+        max-width: 50%;
+        margin: .5rem 0rem;
+    }
+}
+
+
+/* Informations section */
+.hobbies {
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+.title{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	color: var(--clr-gray-2);
+	margin-bottom: 1rem;
+}
+.hobbie_img {
+    height: 139px;
+    object-fit: cover;
+}
+.hobbie__item > *{
+	margin-bottom: .5rem;
+}
+.hobbie__item {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+}
+.hobbies__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbie__item__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--clr-black-3);
+}
+.hobbie__desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--clr-gray-3);
+}
+/* Projects */
+
 .projects__header{
     background-color: #ffffff;
     border-radius: 12px;

@@ -7,13 +7,76 @@
     <link rel="icon" href="src/images/devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
     <link rel="stylesheet" href="src/css/style.css">
-
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <title>My Portfolio</title>
 
   </head>
   <body>
+    <!-- Start Profile -->
+    <section class="about-me bg-color">
+      <img src="src/images/IMG_20190209_122814.jpg" alt="miyster andhiy" class="profile__pic">
+      <div class="profile__content">
+        <div class="infos">
+          <div class="name__content">
+            <span class="name">Anderson Koffi</span>
+            <span class="job">Front-end developer</span>
+          </div>
+          <div class="infos__contact">
+            <a href="mailto:koffiandersonndadev@gmail.com" class="profile__email">
+              <i class="material-icons">email</i>
+              koffiandersonndadev@gmail.com
+            </a>
+            <a href="tel:+225-41810517" class="profile__phone">
+              <i class="material-icons">phone</i>
+              (+225) 41810517
+            </a>
+          </div>
+        </div>
+        <p class="profile__description">
+          Motivated developer who is willing to learn and create outstanding applications. Always up to date with the latest technology. 
+        </p>
+      </div>
+    </section>
+    <!-- End Profile -->
+
+    <section class="informations">
+      <!-- Start Projects -->
+      <div class="hobbies bg-color">
+        <h3 class="title">Hobbies</h3>
+        <div class="hobbies__content">
+          <div class="hobbie__item">
+            <img src="src/images/hobbies/gaming.jpg" alt="" class="hobbie_img">
+            <h4 class="hobbie__item__title">Gaming</h4>
+            <p class="hobbie__desc">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </div>
+        </div>
+        <div class="hobbies__content">
+          <div class="hobbie__item">
+            <img src="src/images/hobbies/music.jpg" alt="" class="hobbie_img">
+            <h4 class="hobbie__item__title">Music</h4>
+            <p class="hobbie__desc">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </div>
+        </div>
+        <div class="hobbies__content">
+          <div class="hobbie__item">
+            <img src="src/images/hobbies/cinema.jpg" alt="" class="hobbie_img">
+            <h4 class="hobbie__item__title">Cinema</h4>
+            <p class="hobbie__desc">
+              Quisque feugiat malesuada molestie.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Projects -->
+    </section>
+
+    <!-- Start Projects -->
     <section class="projects">
-        <div class="projects__header">
+        <div class="projects__header bg-color">
             <div class="projects_title">
               <span class="project__title">Projects</span>
               <span class="project__amount">(3)</span>
@@ -39,7 +102,7 @@
           </ul>
         </div>
     </section>
-
+    <!-- End Projects -->
 
     <!-- JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
