@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
     --radius: 12px;
@@ -21,7 +22,6 @@ Global Styles
 body {
     font-family: "Poppins", sans-serif;
     background-color: #F2F2F2;
-    width: 80vw;
     margin: auto;
 }
 ul {
@@ -36,15 +36,21 @@ img:not(.logo) {
 img {
     display: block;
 }
-
+section{
+    max-width: 1200px;
+}
 /* Projects */
+.projects{
+    width: 90%;
+    margin: 2rem auto;
+}
 .projects__header{
     background-color: #ffffff;
     border-radius: 12px;
     padding: 1rem;
 }
 .section-center {
-    margin: 2rem auto;
+    margin: 2rem 2rem;
     display: grid;
     grid-template-areas: "a a a";
     grid-auto-rows: 1fr;
@@ -111,6 +117,7 @@ img {
 .btn__container {
     display: flex;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 .filter__btn {
     background: transparent;
@@ -119,6 +126,7 @@ img {
     line-height: 25px;
     text-transform: capitalize;
     margin-right: 0.5rem;
+    margin-bottom: .5rem;
     letter-spacing: 1px;
     border-radius: var(--radius);
     padding: .2rem 1.5rem;
@@ -149,6 +157,17 @@ img {
     text-align: center;
 }
 /* Responsive */
-@media only screen and (min-width: 900px){
+@media only screen and (max-width: 1024px){
+    .section-center{
+        grid-template-areas: "a a";
+    }
+}
+
+@media only screen and (max-width: 768px){
     
+    .section-center{
+        grid-template-areas: "a";
+        margin: 2rem 1rem;
+        justify-content: center;
+    }
 }
